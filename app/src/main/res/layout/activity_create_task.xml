@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Task"
+        android:textAlignment="viewStart"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#011627"
+        />
+
+
+    <TextView
+        android:text="Task Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#011627"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/task_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/input_border"/>
+
+    <TextView
+        android:text="Description:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#011627"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/description_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textAlignment="textStart"
+        android:padding="10dp"
+        android:background="@drawable/input_border"
+        android:minLines="5"/>
+
+    <TextView
+        android:text="Due Date:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#011627"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"/>
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="379dp"
+        android:layout_height="138dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:background="@drawable/input_border"
+        android:outlineAmbientShadowColor="#2EC4B6" />
+
+    <TextView
+        android:text="Status:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#011627"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/status_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_border"
+        android:padding="10dp"
+        android:entries="@array/status_options"
+
+       />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_1"
+            android:width="105dp"
+            android:textColor="#2EC4B6"
+            android:text="Create" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
